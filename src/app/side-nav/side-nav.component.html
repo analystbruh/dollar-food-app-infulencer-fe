@@ -1,5 +1,11 @@
 <mat-drawer-container class="example-container">
-    <mat-drawer #drawer mode="over" class="drawer">I'm a drawer</mat-drawer>
+    <mat-drawer #drawer mode="over" class="drawer">
+        <br>
+        &nbsp;&nbsp;
+        <button mat-raised-button (click)="drawer.toggle()">
+            <mat-icon aria-hidden="false" aria-label="menu icon" fontIcon="menu"></mat-icon>
+        </button>
+        other component in here</mat-drawer>
     <mat-drawer-content>
         <br>
         &nbsp;&nbsp;
