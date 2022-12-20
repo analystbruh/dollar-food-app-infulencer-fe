@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-vid-grid',
@@ -7,7 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VidGridComponent implements OnInit {
 
-  constructor() { }
+  public videos = [
+    'https://www.youtube.com/embed/iIzi90-MG9c',
+    'https://www.youtube.com/embed/iIzi90-MG9c',
+    'https://www.youtube.com/embed/iIzi90-MG9c',
+    'https://www.youtube.com/embed/iIzi90-MG9c',
+    'https://www.youtube.com/embed/iIzi90-MG9c',
+    'https://www.youtube.com/embed/iIzi90-MG9c',
+    'https://www.youtube.com/embed/iIzi90-MG9c'
+  ].map(v => this.s.bypassSecurityTrustResourceUrl(v))
+
+  public video = this.s.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/iIzi90-MG9c');
+
+  constructor(public s: DomSanitizer) { }
 
   ngOnInit(): void {
   }
