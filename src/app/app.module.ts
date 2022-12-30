@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { VidGridComponent } from './home/vid-grid/vid-grid.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
 import { AppRoutingModule } from './app-routing.module';
 
 
@@ -17,8 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    VidGridComponent,
-    SideNavComponent
+    VidGridComponent
   ],
   imports: [
     BrowserModule,
