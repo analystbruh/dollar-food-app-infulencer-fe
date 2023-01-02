@@ -15,3 +15,7 @@
 .smaller {
     max-height: 200px;
 }
+
+.tall {
+    min-height: 600px;
+}

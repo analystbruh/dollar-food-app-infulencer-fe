@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { VidGridComponent } from './home/vid-grid/vid-grid.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VidGridComponent
+    VidGridComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
