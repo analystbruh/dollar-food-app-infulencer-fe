@@ -1,0 +1,9 @@
+buy food page:
+break down items prices
+  picture of dish
+  pasta $17
+  foodie/person's name $1 
+  -------------
+  total $18
+
+checkout 
