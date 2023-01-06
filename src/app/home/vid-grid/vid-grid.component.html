@@ -2,18 +2,23 @@
     <div *ngFor="let video of videos" class="col-xl-3 col-md-4 col-sm-6 mt-3 ml-0 ml-sm-3">
         <mat-card>
             <mat-card-content>
-                <div class="ratio ratio-16x9">
-                    <iframe class="embed-responsive-item" [src]="video" allowfullscreen></iframe>
+                <div class="ratio" style="--bs-aspect-ratio: 177%;">
+                    <iframe width="479" height="851" [src]="video" title="add variable later" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </mat-card-content>
             <mat-card-actions>
                 <p>
-                    <img src="https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg"  style="width: 50%;">
-                    <img src="https://www.thechunkychef.com/wp-content/uploads/2017/08/One-Pot-Chicken-Parmesan-Pasta-feat.jpg" style="width: 50%;">
+                    <img src="/assets/m.PNG"  style="width: 50%;">
+                    <img src="assets/seafood.jpg" style="width: 50%;">
                     pasta: $180
                 </p>
-                <button mat-raised-button color="primary">Buy food!</button>
+                <a routerLink="/order">
+                    <button mat-raised-button color="primary">Buy food!</button>
+                </a>
             </mat-card-actions>
         </mat-card>
     </div>
 </div>
+
+
+<!-- <iframe width="473" height="841" src="https://www.youtube.com/embed/2FJORVxKdwE" title="ATL Dollar Food - Crazy Skewers @ Duluth Georgia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->

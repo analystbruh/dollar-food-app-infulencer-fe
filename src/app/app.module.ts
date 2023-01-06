@@ -5,6 +5,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
+import { OrderingService } from './services/ordering.service';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { VidGridLocComponent } from './vid-grid-loc/vid-grid-loc.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { OrderFoodComponent } from './order-food/order-food.component';
+import { OrderFormComponent } from './order-food/order-form/order-form.component';
 
 
 @NgModule({
@@ -23,7 +30,9 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     VidGridComponent,
     FooterComponent,
     VidGridLocComponent,
-    TopBarComponent
+    TopBarComponent,
+    OrderFoodComponent,
+    OrderFormComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +42,12 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     MatSidenavModule,
     MatIconModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
-  providers: [],
+  providers: [OrderingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

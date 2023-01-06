@@ -1,1 +1,13 @@
-<p>top-bar works!</p>
+<mat-toolbar>
+    <div style="width: 100%" class="row">
+        <div class="col-md-4">
+            <button mat-raised-button (click)="goBack()" color="primary">Back</button>
+        </div>
+        <div class="col-md-4 text-center">
+            <a routerLink="/" class="text-white" style="text-decoration: none;">Dollar Food App</a>
+        </div>
+        <div class="col-md-4">
+            <!-- spacer -->
+        </div>
+    </div>
+</mat-toolbar>
