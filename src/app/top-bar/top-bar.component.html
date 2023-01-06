@@ -1,13 +1,6 @@
 <mat-toolbar>
-    <div style="width: 100%" class="row">
-        <div class="col-md-4">
-            <button mat-raised-button (click)="goBack()" color="primary">Back</button>
-        </div>
-        <div class="col-md-4 text-center">
-            <a routerLink="/" class="text-white" style="text-decoration: none;">Dollar Food App</a>
-        </div>
-        <div class="col-md-4">
-            <!-- spacer -->
-        </div>
+    <div class="col-md-12 text-center">
+        <button mat-raised-button (click)="goBack()" color="primary" class="float-start">Back</button>
+        <a routerLink="/" class="text-white no-underline mx-3">Dollar Food App</a>
     </div>
 </mat-toolbar>
