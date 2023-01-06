@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-vid-grid',
-  templateUrl: './vid-grid.component.html',
-  styleUrls: ['./vid-grid.component.css']
+  selector: 'app-vid-grid-loc',
+  templateUrl: './vid-grid-loc.component.html',
+  styleUrls: ['./vid-grid-loc.component.css']
 })
-export class VidGridComponent implements OnInit {
+export class VidGridLocComponent implements OnInit {
 
   public videos = [
     'https://www.youtube.com/embed/2FJORVxKdwE'

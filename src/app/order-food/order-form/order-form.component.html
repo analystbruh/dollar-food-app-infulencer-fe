@@ -1,0 +1,21 @@
+<app-top-bar></app-top-bar>
+<div class="container mt-3">
+    <form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="fname">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lname">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label>Zip</mat-label>
+            <input matInput formControlName="zip">
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" type="submit">submit</button>
+    </form>
+</div>
