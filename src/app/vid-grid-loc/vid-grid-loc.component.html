@@ -1,24 +1,28 @@
 <app-top-bar></app-top-bar>
-<div class="container">
-    <div class="row">
-        <div *ngFor="let video of videos" class="col-xl-3 col-md-4 col-sm-6 mt-3 ml-0 ml-sm-3">
-            <mat-card>
-                <mat-card-content>
-                    <div class="ratio" style="--bs-aspect-ratio: 177%;">
-                        <iframe width="479" height="851" [src]="video" title="add variable later" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                </mat-card-content>
-                <mat-card-actions>
-                    <p>
-                        <img src="assets/m2.PNG"  style="width: 50%;">
-                        <img src="assets/seafood.jpg" style="width: 50%;">
-                        pasta: $180
-                    </p>
-                    <a routerLink="/order">
-                        <button mat-raised-button color="primary">Buy food!</button>
-                    </a>
-                </mat-card-actions>
-            </mat-card>
-        </div>
+<div class="row">
+    <div *ngFor="let short of shorts" class="col-xxl-3 col-xl-4 col-md-6 col-sm-12 mt-3 ml-0 ml-sm-3">
+        <mat-card>
+            <mat-card-content>
+                <div class="ratio" style="--bs-aspect-ratio: 177%;">
+                    <iframe [src]="short.videoLink" title="add variable later" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <p>
+                    <img [src]="short.influencerPic"  style="width: 50%;">
+                    <img [src]="short.foodPic" style="width: 50%;">
+                    {{ short.dish }}: {{ short.price | currency }}
+                </p>
+                <a [href]="short.deliveryLink" target="_blank">
+                    <button mat-raised-button color="primary">Delivery</button>
+                </a>&nbsp;&nbsp;
+                <a [href]="short.pickupLink" target="_blank">
+                    <button mat-raised-button color="primary">Pick Up</button>
+                </a>&nbsp;&nbsp;
+                <a [href]="short.tipLink" target="_blank">
+                    <button mat-raised-button color="primary">Tip</button>
+                </a>
+            </mat-card-actions>
+        </mat-card>
     </div>
 </div>

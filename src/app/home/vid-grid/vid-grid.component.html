@@ -1,28 +1,26 @@
 <div class="row">
-    <div *ngFor="let short of shorts" class="col-xl-3 col-md-4 col-sm-6 mt-3 ml-0 ml-sm-3">
+    <div *ngFor="let short of shorts" class="col-xxl-3 col-xl-4 col-md-6 col-sm-12 mt-3 ml-0 ml-sm-3">
         <mat-card>
             <mat-card-content>
                 <div class="ratio" style="--bs-aspect-ratio: 177%;">
-                    <iframe width="479" height="851" [src]="short" title="add variable later" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe [src]="short.videoLink" title="add variable later" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </mat-card-content>
             <mat-card-actions>
                 <p>
-                    <img src="/assets/m.PNG"  style="width: 50%;">
-                    <img src="assets/seafood.jpg" style="width: 50%;">
-                    pasta: $180
+                    <img [src]="short.influencerPic"  style="width: 50%;">
+                    <img [src]="short.foodPic" style="width: 50%;">
+                    {{ short.dish }}: {{ short.price | currency }}
                 </p>
-                <div class="d-flex justify-content-between">
-                    <a href="https://buy.stripe.com/test_8wM9BCgFb1Zp45acMO" target="_blank">
-                        <button mat-raised-button color="primary">Delivery</button>
-                    </a>
-                    <a href="https://buy.stripe.com/test_eVaeVW74B9rR9pu9AA" target="_blank">
-                        <button mat-raised-button color="primary">Pick Up</button>
-                    </a>
-                    <a href="https://buy.stripe.com/test_eVa6pq9cJ33t7hm9AB" target="_blank">
-                        <button mat-raised-button color="primary">Tip</button>
-                    </a>
-                </div>
+                <a [href]="short.deliveryLink" target="_blank">
+                    <button mat-raised-button color="primary">Delivery</button>
+                </a>&nbsp;&nbsp;
+                <a [href]="short.pickupLink" target="_blank">
+                    <button mat-raised-button color="primary">Pick Up</button>
+                </a>&nbsp;&nbsp;
+                <a [href]="short.tipLink" target="_blank">
+                    <button mat-raised-button color="primary">Tip</button>
+                </a>
             </mat-card-actions>
         </mat-card>
     </div>
@@ -33,7 +31,7 @@
         <mat-card>
             <mat-card-content>
                 <div class="ratio ratio-16x9">
-                    <iframe width="1190" height="669" src="https://www.youtube.com/embed/9y3dwMQ3UBM" title="Marquise making some Pasta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+                    <iframe width="1190" height="669" src="https://www.youtube.com/embed/9y3dwMQ3UBM" title="Marquise making some Pasta" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </mat-card-content>
             <mat-card-actions>
