@@ -13,21 +13,21 @@ export class VidGridComponent implements OnInit {
       videoLink: 'https://www.youtube.com/embed/2FJORVxKdwE',
       dish: 'Crazy Skewers',
       price: 21,
-      deliveryLink: 'https://buy.stripe.com/test_8wM9BCgFb1Zp45acMO',
-      pickupLink: 'https://buy.stripe.com/test_eVaeVW74B9rR9pu9AA',
-      tipLink: 'https://buy.stripe.com/test_eVa6pq9cJ33t7hm9AB',
-      influencerPic: 'assets/m.PNG',
-      foodPic: 'assets/burger.jpeg'
+      deliveryLink: 'https://buy.stripe.com/test_aEU7tif2g7oK2OI9AD',
+      pickupLink: 'https://buy.stripe.com/test_28o00Q3jy5gCgFy5ko',
+      tipLink: 'https://buy.stripe.com/test_4gw00Q07mbF0ahaeUW',
+      influencerPic: 'assets/IMG_1659.jpg',
+      foodPic: 'assets/skewers.png'
     },
     {
       videoLink: 'https://www.youtube.com/embed/iJqayQ1mEqg',
-      dish: 'Cumin Lamb',
-      price: 38,
-      deliveryLink:'https://buy.stripe.com/test_8wM9BCgFb1Zp45acMO',
-      pickupLink: 'https://buy.stripe.com/test_eVaeVW74B9rR9pu9AA',
-      tipLink: 'https://buy.stripe.com/test_eVa6pq9cJ33t7hm9AB',
-      influencerPic: 'assets/m2.PNG',
-      foodPic: 'assets/seafood.jpg'
+      dish: 'Pork with Garlic',
+      price: 15,
+      deliveryLink:'https://buy.stripe.com/test_28o8xm7zO6kGgFyeUU',
+      pickupLink: 'https://buy.stripe.com/test_8wM4h6f2g9wSgFyaEF',
+      tipLink: 'https://buy.stripe.com/test_4gw00Q07mbF0ahaeUW',
+      influencerPic: 'assets/IMG_1659.jpg',
+      foodPic: 'assets/IMG_3282.jpg'
     }
   ].map(obj => {return {
     videoLink: this.sanitize(obj.videoLink),
