@@ -1,5 +1,5 @@
 .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/wings.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/burger2.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
