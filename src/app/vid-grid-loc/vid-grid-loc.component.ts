@@ -9,23 +9,23 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class VidGridLocComponent implements OnInit {
 
   public shorts = [
-    {
-      videoLink: 'https://www.youtube.com/embed/2FJORVxKdwE',
-      dish: 'Crazy Skewers',
-      price: 21,
-      deliveryLink: 'https://buy.stripe.com/test_aEU7tif2g7oK2OI9AD',
-      pickupLink: 'https://buy.stripe.com/test_28o00Q3jy5gCgFy5ko',
-      tipLink: 'https://buy.stripe.com/test_4gw00Q07mbF0ahaeUW',
-      influencerPic: 'assets/IMG_1659.jpg',
-      foodPic: 'assets/skewers.png'
-    },
+    // {
+    //   videoLink: 'https://www.youtube.com/embed/2FJORVxKdwE',
+    //   dish: 'Crazy Skewers',
+    //   price: 21,
+    //   deliveryLink: 'https://buy.stripe.com/test_aEU7tif2g7oK2OI9AD',
+    //   pickupLink: 'https://buy.stripe.com/test_28o00Q3jy5gCgFy5ko',
+    //   tipLink: 'https://buy.stripe.com/test_4gw00Q07mbF0ahaeUW',
+    //   influencerPic: 'assets/IMG_1659.jpg',
+    //   foodPic: 'assets/skewers.png'
+    // },
     {
       videoLink: 'https://www.youtube.com/embed/iJqayQ1mEqg',
       dish: 'Pork with Garlic',
-      price: 15,
-      deliveryLink:'https://buy.stripe.com/test_28o8xm7zO6kGgFyeUU',
-      pickupLink: 'https://buy.stripe.com/test_8wM4h6f2g9wSgFyaEF',
-      tipLink: 'https://buy.stripe.com/test_4gw00Q07mbF0ahaeUW',
+      price: 2,
+      deliveryLink:'https://buy.stripe.com/aEU15s93y7Ca6Wc9AB',
+      pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
+      tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
       influencerPic: 'assets/IMG_1659.jpg',
       foodPic: 'assets/IMG_3282.jpg'
     }
