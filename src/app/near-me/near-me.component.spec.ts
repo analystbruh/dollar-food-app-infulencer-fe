@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VidGridLocComponent } from './vid-grid-loc.component';
+import { NearMeComponent } from './near-me.component';
 
-describe('VidGridLocComponent', () => {
-  let component: VidGridLocComponent;
-  let fixture: ComponentFixture<VidGridLocComponent>;
+describe('NearMeComponent', () => {
+  let component: NearMeComponent;
+  let fixture: ComponentFixture<NearMeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VidGridLocComponent ]
+      declarations: [ NearMeComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VidGridLocComponent);
+    fixture = TestBed.createComponent(NearMeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
