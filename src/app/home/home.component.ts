@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     // },
     {
       videoLink: 'https://www.youtube.com/embed/iJqayQ1mEqg',
-      dish: 'Pork with Garlic',
+      dish: 'Pork with Garlic Sauce',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
       pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
