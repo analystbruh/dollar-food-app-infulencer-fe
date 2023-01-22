@@ -14,25 +14,25 @@ import { OrderingService } from './services/ordering.service';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
-import { VidGridComponent } from './home/vid-grid/vid-grid.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
-import { VidGridLocComponent } from './vid-grid-loc/vid-grid-loc.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { OrderFoodComponent } from './order-food/order-food.component';
 import { OrderFormComponent } from './order-food/order-form/order-form.component';
+import { NearMeComponent } from './near-me/near-me.component';
+import { VidGridComponent } from './vid-grid/vid-grid.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VidGridComponent,
     FooterComponent,
-    VidGridLocComponent,
     TopBarComponent,
     OrderFoodComponent,
-    OrderFormComponent
+    OrderFormComponent,
+    NearMeComponent,
+    VidGridComponent
   ],
   imports: [
     BrowserModule,

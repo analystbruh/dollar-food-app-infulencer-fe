@@ -1,7 +1,6 @@
-<app-top-bar></app-top-bar>
 <div class="container">
     <div class="row">
-        <div *ngFor="let short of shorts" class="col-xxl-3 col-xl-4 col-md-6 col-sm-12 mt-3 ml-0 ml-sm-3">
+        <div *ngFor="let short of shorts" class="col-xxl-4 col-xl-4 col-md-6 col-sm-12 mt-3 ml-0 ml-sm-3">
             <mat-card>
                 <mat-card-content>
                     <div class="ratio" style="--bs-aspect-ratio: 177%;">
@@ -14,15 +13,21 @@
                         <img [src]="short.foodPic" style="width: 50%;">
                         {{ short.dish }}: {{ short.price | currency }}
                     </p>
-                    <a [href]="short.deliveryLink" target="_blank">
-                        <button mat-raised-button color="primary">Delivery</button>
-                    </a>&nbsp;&nbsp;
+                    <div class="row">
+                        <div class="col-xl-9 mt-3">
+                            <a [href]="short.deliveryLink" target="_blank">
+                                <button mat-raised-button color="primary">Delivery</button>
+                            </a>
+                        </div>
+                        <div class="col-xl-3 mt-3">
+                            <a [href]="short.tipLink" target="_blank">
+                                <button mat-raised-button color="primary">Tip</button>
+                            </a>
+                        </div>
+                    </div>
                     <!-- <a [href]="short.pickupLink" target="_blank">
                         <button mat-raised-button color="primary">Pick Up</button>
                     </a>&nbsp;&nbsp; -->
-                    <a [href]="short.tipLink" target="_blank">
-                        <button mat-raised-button color="primary">Tip</button>
-                    </a>
                 </mat-card-actions>
             </mat-card>
         </div>

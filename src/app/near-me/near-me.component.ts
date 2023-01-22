@@ -2,13 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-vid-grid',
-  templateUrl: './vid-grid.component.html',
-  styleUrls: ['./vid-grid.component.css']
+  selector: 'app-near-me',
+  templateUrl: './near-me.component.html',
+  styleUrls: ['./near-me.component.css']
 })
-export class VidGridComponent implements OnInit {
+export class NearMeComponent implements OnInit {
 
-  public shorts = [
+    public shorts = [
     // {
     //   videoLink: 'https://www.youtube.com/embed/2FJORVxKdwE',
     //   dish: 'Crazy Skewers',
@@ -40,17 +40,12 @@ export class VidGridComponent implements OnInit {
     foodPic: obj.foodPic
   }})
 
-  // public videos = [
-  //   'https://www.youtube.com/embed/9y3dwMQ3UBM'
-  // ].map(v => this.s.bypassSecurityTrustResourceUrl(v))
-
-  constructor(public s: DomSanitizer) { }
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
   }
 
   sanitize(url: string): SafeResourceUrl {
-    return this.s.bypassSecurityTrustResourceUrl(url)
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
-
 }
