@@ -20,7 +20,7 @@ export class NearMeComponent implements OnInit {
     //   foodPic: 'assets/skewers.png'
     // },
     {
-      videoLink: 'https://www.youtube.com/embed/iJqayQ1mEqg',
+      videoLink: 'https://www.youtube.com/embed/L9LJm0PA55o',
       dish: 'Pork with Garlic',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
@@ -30,8 +30,8 @@ export class NearMeComponent implements OnInit {
       foodPic: 'assets/IMG_3282.jpg'
     },
     {
-      videoLink: 'https://www.youtube.com/embed/iJqayQ1mEqg',
-      dish: 'Pork with Garlic',
+      videoLink: 'https://www.youtube.com/embed/V3-Kq0RSzE8',
+      dish: 'Orange Chicken Lunch Special',
       price: 15,
       deliveryLink:'https://buy.stripe.com/cN29BY93ye0ydkA3cg',
       pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
