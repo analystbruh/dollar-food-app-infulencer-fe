@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
           color: 'orange',
           fontColor: 'black',
           price: 15,
-          link: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi'
+          link: 'https://buy.stripe.com/cN29BY93ye0ydkA3cg'
         },
         {
           label: 'Eggplant with Garlic Sauce',
@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
           color: 'red',
           fontColor: 'white',
           price: 22,
-          link: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi'
+          link: 'https://buy.stripe.com/eVacOabbG2hQeoEfZ1'
         },
         {
           label: 'Cumin Lamb',
