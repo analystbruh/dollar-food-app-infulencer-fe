@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { OrderingService } from './services/ordering.service';
 
@@ -21,6 +22,7 @@ import { OrderFoodComponent } from './order-food/order-food.component';
 import { OrderFormComponent } from './order-food/order-form/order-form.component';
 import { NearMeComponent } from './near-me/near-me.component';
 import { VidGridComponent } from './vid-grid/vid-grid.component';
+import { PicGridComponent } from './pic-grid/pic-grid.component';
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { VidGridComponent } from './vid-grid/vid-grid.component';
     OrderFoodComponent,
     OrderFormComponent,
     NearMeComponent,
-    VidGridComponent
+    VidGridComponent,
+    PicGridComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,9 @@ import { VidGridComponent } from './vid-grid/vid-grid.component';
     MatToolbarModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [OrderingService],
   bootstrap: [AppComponent]

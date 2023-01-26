@@ -11,18 +11,16 @@
                     <p>
                         <img [src]="short.influencerPic"  style="width: 50%;">
                         <img [src]="short.foodPic" style="width: 50%;">
-                        <br><br>
-                        {{ short.dish }}: {{ short.price | currency }}
                     </p>
-                    <div class="row">
+                    <div class="row" *ngFor="let bttn of short.buttons; let i = index">
                         <div class="col-xl-9 mt-3">
-                            <a [href]="short.deliveryLink" target="_blank">
-                                <button mat-raised-button color="primary">Delivery</button>
+                            <a [href]="bttn.link" target="_blank">
+                                <button mat-raised-button [style]="'background-color: ' + bttn.color + '; color: ' + bttn.fontColor + ';'">{{ bttn.label }}: ${{ bttn.price | number }}</button>
                             </a>
                         </div>
-                        <div class="col-xl-3 mt-3">
+                        <div class="col-xl-3 mt-3" *ngIf="i == 0">
                             <a [href]="short.tipLink" target="_blank">
-                                <button mat-raised-button color="primary">Tip</button>
+                                <button mat-raised-button style="background-color: green;">Tip</button>
                             </a>
                         </div>
                     </div>

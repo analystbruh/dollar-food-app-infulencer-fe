@@ -10,6 +10,7 @@ interface CardData {
   tipLink: SafeResourceUrl;
   influencerPic: SafeResourceUrl;
   foodPic: SafeResourceUrl;
+  buttons: any[];
 }
 
 

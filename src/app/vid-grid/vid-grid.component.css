@@ -9,3 +9,7 @@
     display: inline-block;
     margin: 0px;
 }
+
+button {
+    white-space: pre-wrap !important;
+}

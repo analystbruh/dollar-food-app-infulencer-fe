@@ -27,7 +27,30 @@ export class HomeComponent implements OnInit {
       pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
       tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
       influencerPic: 'assets/christiana.png',
-      foodPic: 'assets/orangechicken.png'
+      foodPic: 'assets/orangechicken.png',
+      buttons: [
+        {
+          label: 'Orange Chicken Lunch Special',
+          color: 'orange',
+          fontColor: 'black',
+          price: 15,
+          link: 'https://buy.stripe.com/cN29BY93ye0ydkA3cg'
+        },
+        {
+          label: 'Eggplant with Garlic Sauce',
+          color: 'purple',
+          fontColor: 'white',
+          price: 18,
+          link: 'https://buy.stripe.com/dR68xU0x27CadkA9AH'
+        },
+        {
+          label: 'Veggie Dumplings with Chili Sauce',
+          color: 'white',
+          fontColor: 'black',
+          price: 13,
+          link: 'https://buy.stripe.com/bIY8xU7Zu1dMa8o9AG'
+        }
+      ]
     },
     {
       videoLink: 'https://www.youtube.com/embed/L9LJm0PA55o',
@@ -37,7 +60,23 @@ export class HomeComponent implements OnInit {
       pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
       tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
       influencerPic: 'assets/IMG_1659.jpg',
-      foodPic: 'assets/IMG_3282.jpg'
+      foodPic: 'assets/IMG_3282.jpg',
+      buttons: [
+        {
+          label: 'Pork with Garlic Sauce',
+          color: 'red',
+          fontColor: 'white',
+          price: 22,
+          link: 'https://buy.stripe.com/eVacOabbG2hQeoEfZ1'
+        },
+        {
+          label: 'Cumin Lamb',
+          color: 'yellow',
+          fontColor: 'black',
+          price: 22,
+          link: 'https://buy.stripe.com/7sIdSeenS1dM94kfZ3'
+        }
+      ]
     },
   ].map(obj => {return {
     videoLink: this.sanitize(obj.videoLink),
@@ -47,7 +86,8 @@ export class HomeComponent implements OnInit {
     pickupLink: this.sanitize(obj.pickupLink),
     tipLink: this.sanitize(obj.tipLink),
     influencerPic: obj.influencerPic,
-    foodPic: obj.foodPic
+    foodPic: obj.foodPic,
+    buttons: obj.buttons
   }})
 
   constructor(private sanitizer: DomSanitizer) { }
