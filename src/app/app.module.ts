@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 import { OrderingService } from './services/ordering.service';
 
@@ -48,6 +49,8 @@ import { PicGridComponent } from './pic-grid/pic-grid.component';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [OrderingService],
   bootstrap: [AppComponent]
