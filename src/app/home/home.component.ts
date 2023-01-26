@@ -41,14 +41,14 @@ export class HomeComponent implements OnInit {
           color: 'purple',
           fontColor: 'white',
           price: 18,
-          link: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi'
+          link: 'https://buy.stripe.com/dR68xU0x27CadkA9AH'
         },
         {
           label: 'Veggie Dumplings with Chili Sauce',
           color: 'white',
           fontColor: 'black',
           price: 13,
-          link: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi'
+          link: 'https://buy.stripe.com/bIY8xU7Zu1dMa8o9AG'
         }
       ]
     },
@@ -74,7 +74,7 @@ export class HomeComponent implements OnInit {
           color: 'yellow',
           fontColor: 'black',
           price: 22,
-          link: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi'
+          link: 'https://buy.stripe.com/7sIdSeenS1dM94kfZ3'
         }
       ]
     },
