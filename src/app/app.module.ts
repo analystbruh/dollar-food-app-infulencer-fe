@@ -48,7 +48,7 @@ import { PicGridComponent } from './pic-grid/pic-grid.component';
     MatToolbarModule,
     ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
     BrowserAnimationsModule,
     MatTooltipModule
   ],
