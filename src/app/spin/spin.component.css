@@ -1,22 +1,22 @@
 /* spin choices */
-@keyframes spinner1 {
+@keyframes spinner2 {
     from {transform: rotate(0deg);}
     to {transform: rotate(750deg);}
 }
 
-.spin1 {
-    animation-name: spinner1;
+.spin2 {
+    animation-name: spinner2;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes spinner2 {
+@keyframes spinner1 {
     from {transform: rotate(0deg);}
     to {transform: rotate(810deg);}
 }
 
-.spin2 {
-    animation-name: spinner2;
+.spin1 {
+    animation-name: spinner1;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
@@ -70,7 +70,7 @@
     background-color: red;
     width: 100px;
     height: 400px;
-    border-top: 50px solid blue;
+    border-top: solid 50px blue;
     margin-left: 350px;
     margin-top: 200px;
 }
@@ -127,3 +127,9 @@
     background-image:    url('/assets/Classic Tavern Burger.png');
 }
 
+.mat-raised-button {
+    font-size: 26px;
+    padding: 8px;
+    width: 200px;
+    background-color: green;
+}

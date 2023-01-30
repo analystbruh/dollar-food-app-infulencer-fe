@@ -14,7 +14,8 @@ export class SpinComponent implements OnInit {
   }
 
   freeSpin(bottle: HTMLDivElement) {
-    let pick = Math.round((Math.random() * 5) + 1)
+    let pick = Math.round((Math.random() * 4) + 2)
+    // let pick = 1;
     bottle.className = `spin${pick}`;
     this.disabled = true;
   }
