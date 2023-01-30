@@ -42,6 +42,13 @@ export class HomeComponent implements OnInit {
           fontColor: 'white',
           price: 20,
           link: 'https://buy.stripe.com/8wM8xUgw0g8GcgwbIS'
+        },
+        {
+          label: 'Classic Burger & Wings',
+          color: 'blue',
+          fontColor: 'white',
+          price: 37,
+          link: 'https://buy.stripe.com/aEU01obbG5u25S85kx'
         }
       ]
     },
@@ -70,7 +77,7 @@ export class HomeComponent implements OnInit {
           link: 'https://buy.stripe.com/dR68xU0x27CadkA9AH'
         },
         {
-          label: 'Veggie Dumplings with Chili Sauce',
+          label: 'Veggie Dumplings w/ Chili Sauce',
           color: 'white',
           fontColor: 'black',
           price: 13,
