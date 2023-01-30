@@ -6,7 +6,7 @@
 
 .spin2 {
     animation-name: spinner2;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -17,7 +17,7 @@
 
 .spin1 {
     animation-name: spinner1;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -28,7 +28,7 @@
 
 .spin3 {
     animation-name: spinner3;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -39,7 +39,7 @@
 
 .spin4 {
     animation-name: spinner4;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -50,7 +50,7 @@
 
 .spin5 {
     animation-name: spinner5;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
@@ -61,16 +61,20 @@
 
 .spin6 {
     animation-name: spinner6;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 /* end choices */
 
 #test-bottle {
-    background-color: red;
+    background-image: url('/assets/GlassBottle2.png');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    /* background-color: red; */
     width: 100px;
     height: 400px;
-    border-top: solid 50px blue;
+    /* border-top: solid 50px blue; */
     margin-left: 350px;
     margin-top: 200px;
 }
