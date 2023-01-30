@@ -78,7 +78,7 @@
 /* choices */
 .main {
     position: relative;
-    border: 2px dotted #000000;
+    /* border: 2px dotted #000000; */
     border-radius: 50%;
     width: 800px;
     height: 800px;
@@ -86,35 +86,44 @@
 
 .circle {
     position: absolute;
-    left: calc(50% - 50px);
-    top: calc(50% - 50px);
-    height: 100px;
-    width: 100px;
-    border: 2px dotted #000000;
+    left: calc(50% - 100px);
+    top: calc(50% - 100px);
+    height: 200px;
+    width: 200px;
+    /* border: 2px dotted #000000; */
     border-radius: 50%;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 .circle:nth-child(1) {
     transform: translateX(400px);
+    background-image:    url('/assets/freefood.png');
 }
 
 .circle:nth-child(2) {
     transform: rotate(60deg) translateX(400px);
+    background-image:    url('/assets/Lemon Pepper Chicken Wings.png');
 }
 
 .circle:nth-child(3) {
     transform: rotate(120deg) translateX(400px);
+    background-image:    url('/assets/Dumplings.png');
 }
 
 .circle:nth-child(4) {
     transform: rotate(180deg) translateX(400px);
+    background-image:    url('/assets/LambFlipped.png');
 }
 
 .circle:nth-child(5) {
     transform: rotate(240deg) translateX(400px);
+    background-image:    url('/assets/orangechicken.png');
 }
 
 .circle:nth-child(6) {
     transform: rotate(300deg) translateX(400px);
+    background-image:    url('/assets/Classic Tavern Burger.png');
 }
 
