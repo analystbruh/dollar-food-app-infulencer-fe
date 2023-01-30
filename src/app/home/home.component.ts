@@ -78,6 +78,32 @@ export class HomeComponent implements OnInit {
         }
       ]
     },
+    {
+      videoLink: 'https://www.youtube.com/embed/rObsbSSLaSo',
+      dish: 'Pork with Garlic Sauce',
+      price: 22,
+      deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
+      pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
+      tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
+      influencerPic: 'assets/IMG_1659.jpg',
+      foodPic: 'assets/IMG_3282.jpg',
+      buttons: [
+        {
+          label: 'Classic Tavern Burger',
+          color: 'brown',
+          fontColor: 'white',
+          price: 16,
+          link: 'https://buy.stripe.com/cN229wenSg8G94kbIT'
+        },
+        {
+          label: 'Lemon Pepper Chicken Wings 10x',
+          color: 'darkgoldenrod',
+          fontColor: 'white',
+          price: 20,
+          link: 'https://buy.stripe.com/8wM8xUgw0g8GcgwbIS'
+        }
+      ]
+    },
   ].map(obj => {return {
     videoLink: this.sanitize(obj.videoLink),
     dish: obj.dish,
