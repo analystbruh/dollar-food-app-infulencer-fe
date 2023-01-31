@@ -88,6 +88,10 @@
     height: 800px;
 }
 
+a {
+    display: block;
+}
+
 .circle {
     position: absolute;
     left: calc(50% - 100px);
