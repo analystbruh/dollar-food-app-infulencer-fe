@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-xl-9 mt-3" *ngFor="let bttn of short.buttons; let i = index">
                             <a [href]="bttn.link" target="_blank">
-                                <button mat-raised-button [style]="'background-color: ' + bttn.color + '; color: ' + bttn.fontColor + ';'">{{ bttn.label }}: ${{ bttn.price | number }}</button>
+                                <button mat-raised-button [style]="'background-color: ' + bttn.color + '; color: ' + bttn.fontColor + ';'">{{ bttn.label }}: ${{ bttn.price }}</button>
                             </a>
                         </div>
                         <div class="col-xl-3 mt-3">

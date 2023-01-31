@@ -23,6 +23,7 @@ import { OrderFormComponent } from './order-food/order-form/order-form.component
 import { NearMeComponent } from './near-me/near-me.component';
 import { VidGridComponent } from './vid-grid/vid-grid.component';
 import { PicGridComponent } from './pic-grid/pic-grid.component';
+import { SpinComponent } from './spin/spin.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { PicGridComponent } from './pic-grid/pic-grid.component';
     OrderFormComponent,
     NearMeComponent,
     VidGridComponent,
-    PicGridComponent
+    PicGridComponent,
+    SpinComponent
   ],
   imports: [
     BrowserModule,
