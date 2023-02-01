@@ -1,6 +1,8 @@
+<!-- <div class="container" *ngIf="loggedIn; else loggedOut"> -->
 <div class="container">
     <div class="row mt-5">
-        <div class="col-12 d-flex justify-content-center mt-5">
+        <div class="col-12 d-flex justify-content-center mt-3">
+            <!-- <div id="test-bottle" #bottle></div> -->
             <div class = "main">
                 <a href="" target="_blank" class="circle">
                     <!-- free food -->
@@ -23,11 +25,26 @@
                 <div id="test-bottle" #bottle></div>
             </div>
         </div>
-        <div class="col-12 d-flex justify-content-center mt-5">
+        <!-- <div class="col-12 d-flex justify-content-center mt-5"> -->
             <!-- <div id="test-bottle" #bottle></div> -->
-        </div>
+        <!-- </div> -->
         <div class="col-12 d-flex justify-content-center mt-5">
             <button mat-raised-button color="primary" (click)="freeSpin(bottle)" [disabled]="disabled">Free Spin!</button>
         </div>
     </div>
 </div>
+
+<!-- <ng-template #loggedOut>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center">
+                <asl-google-signin-button
+                    type='standard'
+                    size='large'
+                    shape="pill"
+                    theme="filled_black">
+                </asl-google-signin-button>
+            </div>
+        </div>
+    </div>
+</ng-template> -->
