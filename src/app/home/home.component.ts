@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -9,16 +11,6 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
 
   public featuredShorts = [
-    // {
-    //   videoLink: 'https://www.youtube.com/embed/2FJORVxKdwE',
-    //   dish: 'Crazy Skewers',
-    //   price: 21,
-    //   deliveryLink: 'https://buy.stripe.com/test_aEU7tif2g7oK2OI9AD',
-    //   pickupLink: 'https://buy.stripe.com/test_28o00Q3jy5gCgFy5ko',
-    //   tipLink: 'https://buy.stripe.com/test_4gw00Q07mbF0ahaeUW',
-    //   influencerPic: 'assets/IMG_1659.jpg',
-    //   foodPic: 'assets/skewers.png'
-    // },
     {
       videoLink: 'https://www.youtube.com/embed/rObsbSSLaSo',
       dish: 'Pork with Garlic Sauce',
@@ -130,7 +122,10 @@ export class HomeComponent implements OnInit {
     buttons: obj.buttons
   }})
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(
+    private sanitizer: DomSanitizer,
+
+  ) { }
 
   ngOnInit(): void {
   }
@@ -138,4 +133,11 @@ export class HomeComponent implements OnInit {
   sanitize(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
+
+  playGame(): void {
+    console.log('gonna play the game!');
+  }
+
+
+
 }

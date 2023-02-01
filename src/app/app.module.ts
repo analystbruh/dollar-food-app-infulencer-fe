@@ -8,7 +8,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+
+import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 
 import { OrderingService } from './services/ordering.service';
 
@@ -52,9 +55,29 @@ import { SpinComponent } from './spin/spin.component';
     MatFormFieldModule,
     MatInputModule,
     BrowserAnimationsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    SocialLoginModule
   ],
-  providers: [OrderingService],
+  providers: [
+    OrderingService,
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              '1000894517370-6ke7b5l6va47gds2ohj62kehjne2dt1o.apps.googleusercontent.com'
+            )
+          }
+        ],
+        onError: (err) => {
+          console.error(err);
+        }
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
