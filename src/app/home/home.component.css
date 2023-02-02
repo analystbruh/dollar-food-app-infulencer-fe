@@ -1,8 +1,9 @@
 .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/porklobsauce.png");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("/assets/porklobsauce.png"); */
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    min-height: 400px;
     width: 100%;
 }
 
@@ -10,12 +11,18 @@
     font-size: 16px;
     padding: 8px;
     width: 200px;
+    margin-bottom: 50px;
 }
 
 .smaller {
-    max-height: 200px;
+    max-height: 100px;
 }
 
 .tall {
     min-height: 600px;
+}
+
+.big-text {
+    font-size: 50px;
+    line-height: 100%;
 }
