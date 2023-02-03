@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { SocialAuthService } from "@abacritt/angularx-social-login";
+import { SocialAuthService } from "@abacritt/angularx-social-login";
 // import { GoogleLoginProvider } from "@abacritt/angularx-social-login";
 import { SocialUser } from "@abacritt/angularx-social-login";
 
@@ -10,7 +10,7 @@ import { SocialUser } from "@abacritt/angularx-social-login";
 })
 export class SpinComponent implements OnInit {
   constructor(
-    // private auth: SocialAuthService
+    private auth: SocialAuthService
     ) { }
 
   public disabled = false;
@@ -21,12 +21,12 @@ export class SpinComponent implements OnInit {
 
 
   ngOnInit(): void {
-    // this.auth.authState.subscribe((user) => {
-    //   this.user = user;
-    //   this.loggedIn = (user != null);
-    //   this.showMe = this.loggedIn;
-    //   console.log(this.showMe, this.loggedIn)
-    // });
+    this.auth.authState.subscribe((user) => {
+      this.user = user;
+      this.loggedIn = (user != null);
+      this.showMe = this.loggedIn;
+      console.log(this.showMe, this.loggedIn)
+    });
   }
 
   // getAccessToken(): void {
