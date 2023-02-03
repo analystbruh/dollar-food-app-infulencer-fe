@@ -68,7 +68,10 @@ import { SpinComponent } from './spin/spin.component';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider(
-              '1000894517370-6ke7b5l6va47gds2ohj62kehjne2dt1o.apps.googleusercontent.com'
+              '1000894517370-6ke7b5l6va47gds2ohj62kehjne2dt1o.apps.googleusercontent.com',
+              {
+                oneTapEnabled: false
+              }
             )
           }
         ],

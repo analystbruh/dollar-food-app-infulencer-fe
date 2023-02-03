@@ -1,40 +1,40 @@
-<!-- <div class="container" *ngIf="loggedIn; else loggedOut"> -->
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-12 d-flex justify-content-center mt-3">
-            <!-- <div id="test-bottle" #bottle></div> -->
-            <div class = "main">
-                <a href="" target="_blank" class="circle">
-                    <!-- free food -->
-                </a>
-                <a href="https://buy.stripe.com/8wM8xUgw0g8GcgwbIS" target="_blank" class="circle">
-                    <!-- lemon pepper wings -->
-                </a>
-                <a href="https://buy.stripe.com/bIY8xU7Zu1dMa8o9AG" target="_blank" class="circle">
-                    <!-- dumplings -->
-                </a>
-                <a href="https://buy.stripe.com/7sIdSeenS1dM94kfZ3" target="_blank" class="circle">
-                    <!-- lamb -->
-                </a>
-                <a href="https://buy.stripe.com/cN29BY93ye0ydkA3cg" target="_blank" class="circle">
-                    <!-- orange chicken -->
-                </a>
-                <a href="https://buy.stripe.com/cN229wenSg8G94kbIT" target="_blank" class="circle">
-                    <!-- burger -->
-                </a>
-                <div id="test-bottle" #bottle></div>
+<div class="container" *ngIf="loggedIn; else loggedOut">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 d-flex justify-content-center mt-3">
+                <div class = "main">
+                    <a href="" target="_blank" class="circle">
+                        <!-- free food -->
+                    </a>
+                    <a href="https://buy.stripe.com/8wM8xUgw0g8GcgwbIS" target="_blank" class="circle">
+                        <!-- lemon pepper wings -->
+                    </a>
+                    <a href="https://buy.stripe.com/bIY8xU7Zu1dMa8o9AG" target="_blank" class="circle">
+                        <!-- dumplings -->
+                    </a>
+                    <a href="https://buy.stripe.com/7sIdSeenS1dM94kfZ3" target="_blank" class="circle">
+                        <!-- lamb -->
+                    </a>
+                    <a href="https://buy.stripe.com/cN29BY93ye0ydkA3cg" target="_blank" class="circle">
+                        <!-- orange chicken -->
+                    </a>
+                    <a href="https://buy.stripe.com/cN229wenSg8G94kbIT" target="_blank" class="circle">
+                        <!-- burger -->
+                    </a>
+                    <div id="test-bottle" #bottle></div>
+                </div>
             </div>
-        </div>
-        <!-- <div class="col-12 d-flex justify-content-center mt-5"> -->
-            <!-- <div id="test-bottle" #bottle></div> -->
-        <!-- </div> -->
-        <div class="col-12 d-flex justify-content-center mt-5">
-            <button mat-raised-button color="primary" (click)="freeSpin(bottle)" [disabled]="disabled">Free Spin!</button>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <button mat-raised-button class="spin-button" (click)="freeSpin(bottle)" [disabled]="disabled">Free Spin!</button>
+            </div>
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <button mat-raised-button (click)="signOut()">Logout</button>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- <ng-template #loggedOut>
+<ng-template #loggedOut>
     <div class="container">
         <div class="row mt-5">
             <div class="col-12 d-flex justify-content-center">
@@ -47,4 +47,4 @@
             </div>
         </div>
     </div>
-</ng-template> -->
+</ng-template>
