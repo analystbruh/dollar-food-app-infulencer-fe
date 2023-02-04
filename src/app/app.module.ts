@@ -10,10 +10,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
+import { HttpClientModule } from '@angular/common/http';
 
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 
 import { OrderingService } from './services/ordering.service';
+import { PlayTrackerService } from './services/play-tracker.service';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -56,10 +58,12 @@ import { SpinComponent } from './spin/spin.component';
     MatInputModule,
     BrowserAnimationsModule,
     MatTooltipModule,
-    SocialLoginModule
+    SocialLoginModule,
+    HttpClientModule
   ],
   providers: [
     OrderingService,
+    PlayTrackerService,
     {
       provide: 'SocialAuthServiceConfig',
       useValue: {

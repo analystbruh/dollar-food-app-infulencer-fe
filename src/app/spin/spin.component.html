@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="col-12 d-flex justify-content-center mt-5">
-                <button mat-raised-button class="spin-button" (click)="freeSpin(bottle)" [disabled]="disabled">Free Spin!</button>
+                <button mat-raised-button class="spin-button" (click)="freeSpin(bottle)" [disabled]="disabled">{{ label }}</button>
             </div>
             <div class="col-12 d-flex justify-content-center mt-5">
                 <button mat-raised-button (click)="signOut()">Logout</button>
