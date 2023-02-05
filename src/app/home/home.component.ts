@@ -45,6 +45,39 @@ export class HomeComponent implements OnInit {
       ]
     },
     {
+      videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78',
+      dish: 'Mexican Al Pastor Tacos (Pork)',
+      price: 14,
+      deliveryLink:'https://buy.stripe.com/28o01o1B61dM0xOdR6',
+      pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
+      tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
+      influencerPic: 'assets/Influencer4.jpg',
+      foodPic: 'assets/orangechicken.png',
+      buttons: [
+        {
+          label: 'Mexican Al Pastor Tacos (Pork) x3',
+          color: 'brown',
+          fontColor: 'white',
+          price: 14,
+          link: 'https://buy.stripe.com/28o01o1B61dM0xOdR6'
+        },
+        {
+          label: 'Mexican Carne Asada Tacos (Beef) x3',
+          color: 'brown',
+          fontColor: 'font',
+          price: 14,
+          link: 'https://buy.stripe.com/00g9BY0x26y64O47sH'
+        },
+        {
+          label: 'Mexican Pollo Tacos (Chicken) x3',
+          color: 'brown',
+          fontColor: 'white',
+          price: 14,
+          link: 'https://buy.stripe.com/4gw9BYa7C9Ki6Wc4gu'
+        },
+      ]
+    },
+    {
       videoLink: 'https://www.youtube.com/embed/V3-Kq0RSzE8',
       dish: 'Orange Chicken Lunch Special',
       price: 15,
