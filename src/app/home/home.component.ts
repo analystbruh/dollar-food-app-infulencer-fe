@@ -102,7 +102,7 @@ export class HomeComponent implements OnInit {
           link: 'https://buy.stripe.com/dR68xU0x27CadkA9AH'
         },
         {
-          label: 'Veggie Dumplings w/ Chili Sauce',
+          label: 'Dumplings w/ Chili Sauce',
           color: 'white',
           fontColor: 'black',
           price: 13,
