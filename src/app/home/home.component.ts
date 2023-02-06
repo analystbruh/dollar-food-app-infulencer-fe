@@ -55,21 +55,21 @@ export class HomeComponent implements OnInit {
       foodPic: 'assets/orangechicken.png',
       buttons: [
         {
-          label: 'Mexican Al Pastor Tacos (Pork) x3',
+          label: 'Al Pastor Tacos (Pork) x3',
           color: 'brown',
           fontColor: 'white',
           price: 14,
           link: 'https://buy.stripe.com/28o01o1B61dM0xOdR6'
         },
         {
-          label: 'Mexican Carne Asada Tacos (Beef) x3',
+          label: 'Carne Asada Tacos (Beef) x3',
           color: 'brown',
           fontColor: 'font',
           price: 14,
           link: 'https://buy.stripe.com/00g9BY0x26y64O47sH'
         },
         {
-          label: 'Mexican Pollo Tacos (Chicken) x3',
+          label: 'Pollo Tacos (Chicken) x3',
           color: 'brown',
           fontColor: 'white',
           price: 14,
