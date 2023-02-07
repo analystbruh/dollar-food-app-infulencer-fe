@@ -149,6 +149,12 @@ a {
     width: 200px;
 }
 
+.huge {
+    font-size: 150px;
+    line-height: 100%;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 1000px) {
 
     #test-bottle {
