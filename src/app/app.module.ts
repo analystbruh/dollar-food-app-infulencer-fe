@@ -29,6 +29,7 @@ import { NearMeComponent } from './near-me/near-me.component';
 import { VidGridComponent } from './vid-grid/vid-grid.component';
 import { PicGridComponent } from './pic-grid/pic-grid.component';
 import { SpinComponent } from './spin/spin.component';
+import { Footer2Component } from './footer2/footer2.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { SpinComponent } from './spin/spin.component';
     NearMeComponent,
     VidGridComponent,
     PicGridComponent,
-    SpinComponent
+    SpinComponent,
+    Footer2Component
   ],
   imports: [
     BrowserModule,
