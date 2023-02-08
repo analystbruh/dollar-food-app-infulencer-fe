@@ -6,7 +6,7 @@ import { NearMeComponent } from './near-me/near-me.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'near-me', component: NearMeComponent },
+  { path: 'game', component: NearMeComponent },
   { path: 'order', component: OrderFoodComponent }
 ];
 
