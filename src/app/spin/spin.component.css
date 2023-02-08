@@ -99,7 +99,7 @@ a {
     top: calc(50% - 75px);
     height: 150px;
     width: 150px;
-    /* border: 2px dotted #000000; */
+    border: 10px solid green;
     border-radius: 50%;
     background-size:     cover;
     background-repeat:   no-repeat;
@@ -150,7 +150,7 @@ a {
 }
 
 .huge {
-    font-size: 150px;
+    font-size: 10vw;
     line-height: 100%;
     font-weight: bold;
 }
@@ -190,7 +190,7 @@ a {
         top: calc(50% - 35px);
         height: 70px;
         width: 70px;
-        /* border: 2px dotted red; */
+        border: 5px solid green;
         border-radius: 50%;
         background-size:     cover;
         background-repeat:   no-repeat;
