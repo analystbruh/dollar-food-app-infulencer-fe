@@ -3,6 +3,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface CardData {
   videoLink: SafeResourceUrl;
+  thumb: string;
   dish: string;
   price: number;
   deliveryLink: SafeResourceUrl;
@@ -57,12 +58,22 @@ export class VidGridComponent implements OnInit {
 
   constructor(public s: DomSanitizer) { }
 
+
+
   ngOnInit(): void {
 
   }
 
   sanitize(url: string): SafeResourceUrl {
     return this.s.bypassSecurityTrustResourceUrl(url)
+  }
+
+  playVid(vidID: string, thumbID: string): void {
+    let thumb = document.getElementById(thumbID) as HTMLDivElement;
+    let video = document.getElementById(vidID) as HTMLDivElement;
+    thumb.style.display = 'none';
+    video.style.display = 'block';
+    console.log(video)
   }
 
 }
