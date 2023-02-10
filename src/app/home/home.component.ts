@@ -12,7 +12,8 @@ export class HomeComponent implements OnInit {
 
   public featuredShorts = [
     {
-      videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78',
+      videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1',
+      thumb: '/assets/chicken-tacos-thumb.png',
       dish: 'Mexican Al Pastor Tacos (Pork)',
       price: 14,
       deliveryLink:'https://buy.stripe.com/28o01o1B61dM0xOdR6',
@@ -23,22 +24,22 @@ export class HomeComponent implements OnInit {
       buttons: [
         {
           label: 'Al Pastor Tacos (Pork) x3',
-          color: 'teal',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 14,
           link: 'https://buy.stripe.com/28o01o1B61dM0xOdR6'
         },
         {
           label: 'Carne Asada Tacos (Beef) x3',
-          color: 'brown',
-          fontColor: 'font',
+          color: 'white',
+          fontColor: 'black',
           price: 14,
           link: 'https://buy.stripe.com/00g9BY0x26y64O47sH'
         },
         {
           label: 'Pollo Tacos (Chicken) x3',
-          color: 'gold',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 14,
           link: 'https://buy.stripe.com/4gw9BYa7C9Ki6Wc4gu'
         },
@@ -46,6 +47,7 @@ export class HomeComponent implements OnInit {
     },
     {
       videoLink: 'https://www.youtube.com/embed/rObsbSSLaSo',
+      thumb: '/assets/chicken-tacos-thumb.png',
       dish: 'Pork with Garlic Sauce',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
@@ -56,22 +58,22 @@ export class HomeComponent implements OnInit {
       buttons: [
         {
           label: 'Classic Tavern Burger',
-          color: 'brown',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 16,
           link: 'https://buy.stripe.com/cN229wenSg8G94kbIT'
         },
         {
           label: 'Lemon Pepper Chicken Wings',
-          color: 'darkgoldenrod',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 20,
           link: 'https://buy.stripe.com/8wM8xUgw0g8GcgwbIS'
         },
         {
           label: 'Classic Burger & Wings',
-          color: 'blue',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 37,
           link: 'https://buy.stripe.com/aEU01obbG5u25S85kx'
         }
@@ -79,6 +81,7 @@ export class HomeComponent implements OnInit {
     },
     {
       videoLink: 'https://www.youtube.com/embed/V3-Kq0RSzE8',
+      thumb: '/assets/chicken-tacos-thumb.png',
       dish: 'Orange Chicken Lunch Special',
       price: 15,
       deliveryLink:'https://buy.stripe.com/cN29BY93ye0ydkA3cg',
@@ -89,15 +92,15 @@ export class HomeComponent implements OnInit {
       buttons: [
         {
           label: 'Orange Chicken Lunch Special',
-          color: 'orange',
+          color: 'white',
           fontColor: 'black',
           price: 15,
           link: 'https://buy.stripe.com/cN29BY93ye0ydkA3cg'
         },
         {
           label: 'Eggplant with Garlic Sauce',
-          color: 'purple',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 18,
           link: 'https://buy.stripe.com/dR68xU0x27CadkA9AH'
         },
@@ -112,6 +115,7 @@ export class HomeComponent implements OnInit {
     },
     {
       videoLink: 'https://www.youtube.com/embed/L9LJm0PA55o',
+      thumb: '/assets/chicken-tacos-thumb.png',
       dish: 'Pork with Garlic Sauce',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
@@ -122,22 +126,22 @@ export class HomeComponent implements OnInit {
       buttons: [
         {
           label: 'Pork with Garlic Sauce',
-          color: 'red',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 22,
           link: 'https://buy.stripe.com/eVacOabbG2hQeoEfZ1'
         },
         {
           label: 'Cumin Lamb',
-          color: 'yellow',
+          color: 'white',
           fontColor: 'black',
           price: 22,
           link: 'https://buy.stripe.com/7sIdSeenS1dM94kfZ3'
         },
         {
           label: 'Dinner Special: Pork + Lamb',
-          color: 'blue',
-          fontColor: 'white',
+          color: 'white',
+          fontColor: 'black',
           price: 45,
           link: 'https://buy.stripe.com/28o6pMdjOf4C3K0aEN'
         },
@@ -145,6 +149,7 @@ export class HomeComponent implements OnInit {
     }
   ].map(obj => {return {
     videoLink: this.sanitize(obj.videoLink),
+    thumb: obj.thumb,
     dish: obj.dish,
     price: obj.price,
     deliveryLink: this.sanitize(obj.deliveryLink),

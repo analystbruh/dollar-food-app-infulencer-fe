@@ -13,3 +13,11 @@
 button {
     white-space: pre-wrap !important;
 }
+
+.showMe {
+    display: block;
+}
+
+.hideMe {
+    display: none;
+}
