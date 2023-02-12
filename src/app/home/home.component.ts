@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   public featuredShorts = [
     {
       videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78',
-      thumb: '/assets/chicken-tacos-thumb.png',
+      thumb: '/assets/taco-thumb.gif',
       dish: 'Mexican Al Pastor Tacos (Pork)',
       price: 14,
       deliveryLink:'https://buy.stripe.com/28o01o1B61dM0xOdR6',
@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
     },
     {
       videoLink: 'https://www.youtube.com/embed/rObsbSSLaSo',
-      thumb: '/assets/chicken-tacos-thumb.png',
+      thumb: '/assets/lemon-pepper-chicken.gif',
       dish: 'Pork with Garlic Sauce',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
@@ -79,9 +79,43 @@ export class HomeComponent implements OnInit {
         }
       ]
     },
+    // {
+    //   videoLink: 'https://www.youtube.com/embed/5YK6DnL_OkI',
+    //   thumb: '/assets/steak-fries.gif',
+    //   dish: 'Steak Fries',
+    //   price: 22,
+    //   deliveryLink:'https://buy.stripe.com/4gwcOa4Nig8G4O4eVb',
+    //   pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
+    //   tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
+    //   influencerPic: 'assets/IMG_1659.jpg',
+    //   foodPic: 'assets/IMG_3282.jpg',
+    //   buttons: [
+    //     {
+    //       label: 'Pork with Garlic Sauce',
+    //       color: 'white',
+    //       fontColor: 'black',
+    //       price: 22,
+    //       link: 'https://buy.stripe.com/eVacOabbG2hQeoEfZ1'
+    //     },
+    //     {
+    //       label: 'Cumin Lamb',
+    //       color: 'white',
+    //       fontColor: 'black',
+    //       price: 22,
+    //       link: 'https://buy.stripe.com/7sIdSeenS1dM94kfZ3'
+    //     },
+    //     {
+    //       label: 'Dinner Special: Pork + Lamb',
+    //       color: 'white',
+    //       fontColor: 'black',
+    //       price: 45,
+    //       link: 'https://buy.stripe.com/28o6pMdjOf4C3K0aEN'
+    //     }
+    //   ]
+    // },
     {
       videoLink: 'https://www.youtube.com/embed/V3-Kq0RSzE8',
-      thumb: '/assets/chicken-tacos-thumb.png',
+      thumb: '/assets/orange-chicken.gif',
       dish: 'Orange Chicken Lunch Special',
       price: 15,
       deliveryLink:'https://buy.stripe.com/cN29BY93ye0ydkA3cg',
@@ -115,7 +149,7 @@ export class HomeComponent implements OnInit {
     },
     {
       videoLink: 'https://www.youtube.com/embed/L9LJm0PA55o',
-      thumb: '/assets/chicken-tacos-thumb.png',
+      thumb: '/assets/cumin-lamb.gif',
       dish: 'Pork with Garlic Sauce',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
@@ -144,7 +178,7 @@ export class HomeComponent implements OnInit {
           fontColor: 'black',
           price: 45,
           link: 'https://buy.stripe.com/28o6pMdjOf4C3K0aEN'
-        },
+        }
       ]
     }
   ].map(obj => {
