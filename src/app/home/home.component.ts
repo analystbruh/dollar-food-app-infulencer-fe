@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   public featuredShorts = [
     {
-      videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1',
+      videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78',
       thumb: '/assets/chicken-tacos-thumb.png',
       dish: 'Mexican Al Pastor Tacos (Pork)',
       price: 14,
@@ -147,18 +147,22 @@ export class HomeComponent implements OnInit {
         },
       ]
     }
-  ].map(obj => {return {
-    videoLink: this.sanitize(obj.videoLink),
-    thumb: obj.thumb,
-    dish: obj.dish,
-    price: obj.price,
-    deliveryLink: this.sanitize(obj.deliveryLink),
-    pickupLink: this.sanitize(obj.pickupLink),
-    tipLink: this.sanitize(obj.tipLink),
-    influencerPic: obj.influencerPic,
-    foodPic: obj.foodPic,
-    buttons: obj.buttons
-  }})
+  ].map(obj => {
+    let autoplay = '?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1';
+    return {
+      videoLink: this.sanitize(`${obj.videoLink}${autoplay}`),
+      showMe: false,
+      thumb: obj.thumb,
+      dish: obj.dish,
+      price: obj.price,
+      deliveryLink: this.sanitize(obj.deliveryLink),
+      pickupLink: this.sanitize(obj.pickupLink),
+      tipLink: this.sanitize(obj.tipLink),
+      influencerPic: obj.influencerPic,
+      foodPic: obj.foodPic,
+      buttons: obj.buttons
+    }
+  })
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -171,11 +175,5 @@ export class HomeComponent implements OnInit {
   sanitize(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
-
-  playGame(): void {
-    console.log('gonna play the game!');
-  }
-
-
 
 }
