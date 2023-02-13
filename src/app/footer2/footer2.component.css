@@ -45,3 +45,19 @@ p {
     line-height: 100%;
     font-weight: bold;
 }
+
+.footer {
+    opacity: 0;
+    animation: fadeUp 3s forwards;
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
