@@ -4,4 +4,14 @@
 
 .mat-raised-button {
     background-color: red;
+    font-weight: bolder;
+    font-size: larger;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
+.mat-toolbar {
+    background-color: black;
 }

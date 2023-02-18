@@ -12,48 +12,15 @@ export class HomeComponent implements OnInit {
 
   public featuredShorts = [
     {
-      videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78',
-      thumb: '/assets/taco-thumb.gif',
-      dish: 'Mexican Al Pastor Tacos (Pork)',
-      price: 14,
-      deliveryLink:'https://buy.stripe.com/28o01o1B61dM0xOdR6',
-      pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
-      tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
-      influencerPic: 'assets/Influencer4.jpg',
-      foodPic: 'assets/orangechicken.png',
-      buttons: [
-        {
-          label: 'Al Pastor Tacos (Pork) x3',
-          color: 'white',
-          fontColor: 'black',
-          price: 14,
-          link: 'https://buy.stripe.com/28o01o1B61dM0xOdR6'
-        },
-        {
-          label: 'Carne Asada Tacos (Beef) x3',
-          color: 'white',
-          fontColor: 'black',
-          price: 14,
-          link: 'https://buy.stripe.com/00g9BY0x26y64O47sH'
-        },
-        {
-          label: 'Pollo Tacos (Chicken) x3',
-          color: 'white',
-          fontColor: 'black',
-          price: 14,
-          link: 'https://buy.stripe.com/4gw9BYa7C9Ki6Wc4gu'
-        },
-      ]
-    },
-    {
       videoLink: 'https://www.youtube.com/embed/rObsbSSLaSo',
-      thumb: '/assets/lemon-pepper-chicken.gif',
+      thumb: '/assets/LemonPepperWings.gif',
       dish: 'Pork with Garlic Sauce',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
       pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
       tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
       influencerPic: 'assets/influencer3.png',
+      influencerHandle: 'angus.reviews.food',
       foodPic: 'assets/IMG_3282.jpg',
       buttons: [
         {
@@ -79,49 +46,16 @@ export class HomeComponent implements OnInit {
         }
       ]
     },
-    // {
-    //   videoLink: 'https://www.youtube.com/embed/5YK6DnL_OkI',
-    //   thumb: '/assets/steak-fries.gif',
-    //   dish: 'Steak Fries',
-    //   price: 22,
-    //   deliveryLink:'https://buy.stripe.com/4gwcOa4Nig8G4O4eVb',
-    //   pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
-    //   tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
-    //   influencerPic: 'assets/IMG_1659.jpg',
-    //   foodPic: 'assets/IMG_3282.jpg',
-    //   buttons: [
-    //     {
-    //       label: 'Pork with Garlic Sauce',
-    //       color: 'white',
-    //       fontColor: 'black',
-    //       price: 22,
-    //       link: 'https://buy.stripe.com/eVacOabbG2hQeoEfZ1'
-    //     },
-    //     {
-    //       label: 'Cumin Lamb',
-    //       color: 'white',
-    //       fontColor: 'black',
-    //       price: 22,
-    //       link: 'https://buy.stripe.com/7sIdSeenS1dM94kfZ3'
-    //     },
-    //     {
-    //       label: 'Dinner Special: Pork + Lamb',
-    //       color: 'white',
-    //       fontColor: 'black',
-    //       price: 45,
-    //       link: 'https://buy.stripe.com/28o6pMdjOf4C3K0aEN'
-    //     }
-    //   ]
-    // },
     {
       videoLink: 'https://www.youtube.com/embed/V3-Kq0RSzE8',
-      thumb: '/assets/orange-chicken.gif',
+      thumb: '/assets/orangechicken.gif',
       dish: 'Orange Chicken Lunch Special',
       price: 15,
       deliveryLink:'https://buy.stripe.com/cN29BY93ye0ydkA3cg',
       pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
       tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
       influencerPic: 'assets/christiana.png',
+      influencerHandle: 'christianatherealtor',
       foodPic: 'assets/orangechicken.png',
       buttons: [
         {
@@ -148,14 +82,85 @@ export class HomeComponent implements OnInit {
       ]
     },
     {
+      videoLink: 'https://www.youtube.com/embed/Ou2AHkXMJ78',
+      thumb: '/assets/Tacos.gif',
+      dish: 'Mexican Al Pastor Tacos (Pork)',
+      price: 14,
+      deliveryLink:'https://buy.stripe.com/28o01o1B61dM0xOdR6',
+      pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
+      tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
+      influencerPic: 'assets/Influencer4.jpg',
+      influencerHandle: 'msthearysinn',
+      foodPic: 'assets/orangechicken.png',
+      buttons: [
+        {
+          label: 'Al Pastor Tacos (Pork) x3',
+          color: 'white',
+          fontColor: 'black',
+          price: 14,
+          link: 'https://buy.stripe.com/28o01o1B61dM0xOdR6'
+        },
+        {
+          label: 'Carne Asada Tacos (Beef) x3',
+          color: 'white',
+          fontColor: 'black',
+          price: 14,
+          link: 'https://buy.stripe.com/00g9BY0x26y64O47sH'
+        },
+        {
+          label: 'Pollo Tacos (Chicken) x3',
+          color: 'white',
+          fontColor: 'black',
+          price: 14,
+          link: 'https://buy.stripe.com/4gw9BYa7C9Ki6Wc4gu'
+        },
+      ]
+    },
+    {
+      videoLink: 'https://www.youtube.com/embed/5YK6DnL_OkI',
+      thumb: '/assets/CheeseFries.gif',
+      dish: 'Steak Fries',
+      price: 22,
+      deliveryLink:'https://buy.stripe.com/4gwcOa4Nig8G4O4eVb',
+      pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
+      tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
+      influencerPic: 'assets/IMG_1659.jpg',
+      influencerHandle: 'vibewithmarcy',
+      foodPic: 'assets/IMG_3282.jpg',
+      buttons: [
+        {
+          label: 'Pork with Garlic Sauce',
+          color: 'white',
+          fontColor: 'black',
+          price: 22,
+          link: 'https://buy.stripe.com/eVacOabbG2hQeoEfZ1'
+        },
+        {
+          label: 'Cumin Lamb',
+          color: 'white',
+          fontColor: 'black',
+          price: 22,
+          link: 'https://buy.stripe.com/7sIdSeenS1dM94kfZ3'
+        },
+        {
+          label: 'Dinner Special: Pork + Lamb',
+          color: 'white',
+          fontColor: 'black',
+          price: 45,
+          link: 'https://buy.stripe.com/28o6pMdjOf4C3K0aEN'
+        }
+      ]
+    },
+    {
       videoLink: 'https://www.youtube.com/embed/L9LJm0PA55o',
-      thumb: '/assets/cumin-lamb.gif',
+      thumb: '/assets/cuminlamb.gif',
       dish: 'Pork with Garlic Sauce',
       price: 22,
       deliveryLink:'https://buy.stripe.com/eVacOabbG2hQeoEfZ1',
       pickupLink: 'https://buy.stripe.com/14kdSebbG5u21BS4gg',
       tipLink: 'https://buy.stripe.com/9AQ7tQbbGg8G80g4gi',
       influencerPic: 'assets/IMG_1659.jpg',
+      influencerHandle: 'stevecasino',
       foodPic: 'assets/IMG_3282.jpg',
       buttons: [
         {
@@ -182,7 +187,7 @@ export class HomeComponent implements OnInit {
       ]
     }
   ].map(obj => {
-    let autoplay = '?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=0&autoplay=1';
+    let autoplay = '?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1';
     return {
       videoLink: this.sanitize(`${obj.videoLink}${autoplay}`),
       showMe: false,
@@ -193,6 +198,7 @@ export class HomeComponent implements OnInit {
       pickupLink: this.sanitize(obj.pickupLink),
       tipLink: this.sanitize(obj.tipLink),
       influencerPic: obj.influencerPic,
+      influencerHandle: obj.influencerHandle,
       foodPic: obj.foodPic,
       buttons: obj.buttons
     }
@@ -204,10 +210,31 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    window.addEventListener("scroll", this.reveal);
+    // To check the scroll position on page load
+    this.reveal();
   }
 
   sanitize(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  reveal(): void {
+    console.log('reveal');
+    let reveals = document.querySelectorAll('.reveal');
+    console.log(reveals);
+    // let windowHeight: number;
+    // let elementTop: number;
+    // let elementVisible: number;
+    for (let i = 0; i < reveals.length; i++) {
+      let windowHeight = window.innerHeight;
+      let elementTop = reveals[i].getBoundingClientRect().top;
+      let elementVisible = 667;
+      console.log('elementTop:', elementTop, 'windowHeight:', windowHeight, 'elementVisisble:', elementVisible);
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      }
+    }
   }
 
 }

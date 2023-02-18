@@ -3,7 +3,7 @@
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
+    min-height: 200px;
     width: 100%;
 }
 
@@ -21,11 +21,27 @@
 }
 
 .tall {
-    min-height: 600px;
+    /* min-height: 600px; */
 }
 
 .big-text {
-    font-size: 52px;
+    font-size: 58px;
     line-height: 100%;
+    font-weight: bold;
 }
 
+/* scroll stuff */
+.reveal {
+    /* position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease; */
+    height: 0px;
+    visibility: hidden;
+  }
+  .reveal.active {
+    /* transform: translateY(0);
+    opacity: 1; */
+    visibility: visible;
+    height: auto;
+  }

@@ -11,6 +11,7 @@ interface CardData {
   pickupLink: SafeResourceUrl;
   tipLink: SafeResourceUrl;
   influencerPic: SafeResourceUrl;
+  influencerHandle: string;
   foodPic: SafeResourceUrl;
   buttons: any[];
 }
