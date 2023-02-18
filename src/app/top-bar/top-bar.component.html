@@ -1,11 +1,14 @@
 <mat-toolbar>
-    <div class="col-md-4 text-center">
-        <button mat-raised-button (click)="goBack()" color="primary" class="float-start">Back</button>
+    <div class="col-6 d-flex justify-content-start">
+        <!-- <button mat-raised-button (click)="goBack()" color="primary" class="float-start">Back</button> -->
+        <img src="/assets/dollar1.png" class="img-fluid" style="max-height: 94px;">
     </div>
-    <div class="col-md-4 text-center">
+    <!-- <div class="col-md-4 text-center">
         <a routerLink="/" class="text-white no-underline mx-3">Dollar Food App</a>
-    </div>
-    <div class="col-md-4">
-        <!-- empty -->
+    </div> -->
+    <div class="col-6 d-flex justify-content-end">
+        <a [routerLink]="'game'">
+            <button mat-raised-button color="primary">WIN FREE FOOD!</button>
+        </a>
     </div>
 </mat-toolbar>
