@@ -6,7 +6,13 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+ animations: [
+    trigger('fadeLeft', [
+      state('void', style({ opacity: 0, transform: 'translateX(100%)'})),
+      transition('void => *', animate(1000)),
+    ]),
+  ],
 })
 export class HomeComponent implements OnInit {
 
