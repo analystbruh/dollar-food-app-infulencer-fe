@@ -17,8 +17,29 @@
     padding-top: 30px;
 }
 
-@media only screen and (max-width: 500px) {
-    .mat-raised-button {
-        font-size: large;
+.foodapp {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.testing2 {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mat-toolbar {
+        height: 110px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .testing {
+        display: none;
+    }
+
+    .testing2 {
+        display: block;
     }
 }
