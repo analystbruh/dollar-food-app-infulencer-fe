@@ -129,26 +129,19 @@ export class HomeComponent implements OnInit {
       foodPic: 'assets/IMG_3282.jpg',
       buttons: [
         {
-          label: 'Pork with Garlic Sauce',
+          label: 'Beef Bulgogi Cheese Fries',
           color: 'white',
           fontColor: 'black',
-          price: 22,
-          link: 'https://buy.stripe.com/eVacOabbG2hQeoEfZ1'
+          price: 17,
+          link: 'https://buy.stripe.com/4gwcOa4Nig8G4O4eVb'
         },
         {
-          label: 'Cumin Lamb',
+          label: 'Spicy Fried Chicken Cupbob',
           color: 'white',
           fontColor: 'black',
-          price: 22,
-          link: 'https://buy.stripe.com/7sIdSeenS1dM94kfZ3'
+          price: 17,
+          link: 'https://buy.stripe.com/dR629wa7C6y6bcseVc'
         },
-        {
-          label: 'Dinner Special: Pork + Lamb',
-          color: 'white',
-          fontColor: 'black',
-          price: 45,
-          link: 'https://buy.stripe.com/28o6pMdjOf4C3K0aEN'
-        }
       ]
     },
     {
