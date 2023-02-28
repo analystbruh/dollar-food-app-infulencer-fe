@@ -32,17 +32,30 @@ export class VidGridComponent implements OnInit {
 
 
   ngOnInit(): void {
-
+    window.addEventListener('scroll', this.reveal);
+    window.onload = this.reveal;
   }
 
   sanitize(url: string): SafeResourceUrl {
-    return this.s.bypassSecurityTrustResourceUrl(url)
+    return this.s.bypassSecurityTrustResourceUrl(url);
   }
 
   playVid(thumbID: string, short: any): void {
     let thumb = document.getElementById(thumbID) as HTMLDivElement;
     thumb.style.display = 'none';
     short.showMe = true;
+  }
+
+  reveal(): void {
+    let videos = document.querySelectorAll('.reveal');
+    videos.forEach(video => {
+      let windowHeight = window.innerHeight;
+      let elementTop = video.getBoundingClientRect().top;
+      let elementVisible = 10;
+      if (elementTop < windowHeight - elementVisible) {
+        video.classList.add('active');
+      }
+    })
   }
 
 }

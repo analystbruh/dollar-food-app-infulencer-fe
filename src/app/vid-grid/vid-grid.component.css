@@ -21,3 +21,24 @@ button {
 .hideMe {
     display: none;
 }
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.reveal {
+    visibility: hidden;
+}
+
+.reveal.active {
+    visibility: visible;
+    animation-name: fadeLeft;
+    animation-duration: 3s;
+}
