@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div *ngFor="let short of shorts; let i = index;" class="col-xxl-4 col-xl-4 col-md-6 col-sm-12 mt-3 ml-0 ml-sm-3">
-            <mat-card>
+            <mat-card class="reveal">
                 <mat-card-content>
                     <div style="min-height: 150px;" id="thumb{{i}}" (click)="playVid('thumb'+i, short)">
                         <img class="img img-fluid" [src]="short.thumb">

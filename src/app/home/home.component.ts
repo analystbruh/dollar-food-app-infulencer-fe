@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -203,31 +202,11 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    window.addEventListener("scroll", this.reveal);
-    // To check the scroll position on page load
-    this.reveal();
+
   }
 
   sanitize(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
-  }
-
-  reveal(): void {
-    console.log('reveal');
-    let reveals = document.querySelectorAll('.reveal');
-    console.log(reveals);
-    // let windowHeight: number;
-    // let elementTop: number;
-    // let elementVisible: number;
-    for (let i = 0; i < reveals.length; i++) {
-      let windowHeight = window.innerHeight;
-      let elementTop = reveals[i].getBoundingClientRect().top;
-      let elementVisible = 667;
-      console.log('elementTop:', elementTop, 'windowHeight:', windowHeight, 'elementVisisble:', elementVisible);
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add("active");
-      }
-    }
   }
 
 }
