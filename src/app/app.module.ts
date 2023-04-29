@@ -30,6 +30,7 @@ import { VidGridComponent } from './vid-grid/vid-grid.component';
 import { PicGridComponent } from './pic-grid/pic-grid.component';
 import { SpinComponent } from './spin/spin.component';
 import { Footer2Component } from './footer2/footer2.component';
+import { PickupOrDeliveryComponent } from './pickup-or-delivery/pickup-or-delivery.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { Footer2Component } from './footer2/footer2.component';
     VidGridComponent,
     PicGridComponent,
     SpinComponent,
-    Footer2Component
+    Footer2Component,
+    PickupOrDeliveryComponent
   ],
   imports: [
     BrowserModule,

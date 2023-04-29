@@ -47,6 +47,7 @@ export class VidGridComponent implements OnInit {
   }
 
   reveal(): void {
+    console.log('hey')
     let videos = document.querySelectorAll('.reveal');
     videos.forEach(video => {
       let windowHeight = window.innerHeight;
