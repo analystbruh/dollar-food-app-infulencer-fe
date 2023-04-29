@@ -1,0 +1,12 @@
+.mat-icon {
+    font-size: 50px;
+    height: 50px;
+    line-height: 100%;
+    width: auto;
+}
+
+.mat-raised-button {
+    height: 50vh;
+    min-width: 140px;
+    width: 100%;
+}
